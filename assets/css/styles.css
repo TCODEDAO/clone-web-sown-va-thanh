@@ -205,7 +205,7 @@ html {
 
 .header__content {
     display: flex;
-    width: 1040px;
+    width: 1024px;
     justify-content: space-between;
     align-items: center;
 }
@@ -496,24 +496,35 @@ html {
 
 .footer-list {
     list-style: none;
+    margin-top: 12px;
 }
 
-.footer-list__tilte {
+.footer-list__tilte{
     font-size: 20px;
     color: #94a1af;
+    position: relative;
+    margin-bottom: 8px;
 }
 
 .footer-list__tilte::before {
     content: "";
+    display: block;
+    width: 60px;
+    position: absolute;
+    top: calc(100% + 6px);
+    left: 0;
+    border-bottom: 3px solid #94a1af;
 }
 
-.footer-list__item {}
+.footer-list__item {
+    line-height: 18px;
+}
 
 .footer-list__item a {
     text-decoration: none;
     color: #00d07e;
     display: inline-block;
-    padding: 14px 0;
+    padding: 12px 0;
 }
 
 .footer-list__item--fix a {
