@@ -1,0 +1,535 @@
+.body {
+    margin: 0 120px;
+}
+
+/* Gioi thieu sach giao khoa */
+.list-books {
+    margin-bottom: 20px;
+
+}
+
+
+.list-books__content {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+}
+
+.list-books__content--child {
+    display: block;
+    padding: 16px;
+    border-radius: 4px;
+}
+
+.list-books__content--child:first-child {
+    background: linear-gradient(45deg, #ff5252, #f48fb1);
+}
+
+.list-books__content--child:nth-child(2) {
+    background: linear-gradient(45deg, #ff6f00, #ffca28);
+}
+
+.list-books__content--child:nth-child(3) {
+    background: linear-gradient(45deg, #43a047, #1de9b6)
+}
+
+.list-books__content--child:nth-child(4) {
+    background: linear-gradient(45deg, #8e24aa, #ff6e40);
+}
+
+.list-books__content--child:nth-child(5) {
+    background: linear-gradient(45deg, #f44336, #ff5252);
+}
+
+.list-books__content--child:last-child {
+    background: linear-gradient(45deg, #0288d1, #26c6da);
+}
+
+.books {}
+
+.books__name {
+    margin: auto;
+    font-size: 15px;
+    text-align: center;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 1px 1px 1px rgb(0 0 0 / 74%);
+}
+
+.books__description {
+    text-align: center;
+    font-size: 12px;
+    margin: 5px auto;
+    font-style: italic;
+    color: #000;
+}
+
+/* Phan ung hoa hoc noi bat */
+.list-chemicalReaction {
+    margin-bottom: 15px;
+}
+
+.list-chemicalReaction__title {
+    margin: 7.5px auto;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    position: relative;
+
+}
+
+.list-chemicalReaction__content {
+    /* overflow-x: scroll; */
+    display: block;
+
+}
+
+.slider {
+    max-height: 250px;
+    display: flex;
+    list-style: none;
+    position: relative;
+    overflow-x: scroll;
+    -webkit-transform: translate3d(0, 0, 0);
+}
+
+.slider::-webkit-scrollbar {
+    width: 10px;
+    cursor: pointer;
+}
+
+@media screen and (max-width:600px) {
+    .slider::-webkit-scrollbar {
+
+        display: none;
+    }
+}
+
+.slider::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 8px;
+
+    @media (max-width: 600px) {
+        border-radius: none;
+
+    }
+}
+
+.slider__child {
+    display: inline-block;
+    min-width: 206.667px;
+    margin-right: 20px;
+}
+
+.slider__child--img {
+    border-radius: 8px;
+    min-height: 129.17px;
+    background-image: linear-gradient(20deg, rgba(244, 136, 13, 0.648) 0%, rgba(112, 255, 152, 0.676) 100%), url("https://tudienhoahoc.com/wp-content/uploads/2019/09/phan-ung-hoa-hoc-cua-bo.jpg");
+    background-size: cover;
+}
+
+.slider__child:nth-child(3) .slider__child--img {
+    background-image: linear-gradient(20deg, rgba(65, 12, 188, 0.61) 0%, rgba(255, 111, 49, 0.537) 100%), url("https://tudienhoahoc.com/wp-content/uploads/2019/09/phan-ung-hoa-hoc-cua-cacbon-va-hop-chat-cua-no.jpg");
+
+}
+
+.img-content {}
+
+
+.slider__child--text {
+    margin: 7.5px auto;
+
+}
+
+.slider__child--text h3 {}
+
+.slider__child--text h3 a {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.3;
+    text-decoration: none;
+    color: #000;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Hurricane', cursive;
+    font-family: 'Roboto', sans-serif;
+}
+
+.grid {
+    width: 1024px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.grid__full-width {
+    width: 100%;
+}
+
+.grid__row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -20px;
+}
+
+.grid__column-8 {
+    padding: 0 20px;
+    width: 66.6667%;
+}
+
+.grid__column-4 {
+    padding: 0 20px;
+    width: 33.3334%;
+}
+
+.grid__column-3 {
+    padding: 0 20px;
+    width: 33.3334%;
+}
+
+/*Header*/
+.header {
+    background-image: linear-gradient(45deg, #00d07e, #2196F3);
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999999;
+}
+
+.header__content {
+    display: flex;
+    width: 1040px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand {
+    font-size: 34px;
+    display: flex;
+    color: #fff;
+    text-decoration: none;
+}
+
+.brand__icon {}
+
+.brand__name {
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+.nav-search {
+    display: flex;
+    align-items: center;
+}
+
+.nav {
+    display: flex;
+    list-style: none;
+}
+
+.nav__item {
+    position: relative;
+}
+
+.nav__item:hover .sub-nav {
+    display: block;
+    z-index: 9999;
+
+}
+
+.nav__item--link {
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 23px 10px;
+}
+
+.nav__item--link:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.search-icon {
+    color: #fff;
+    padding: 24px 10px;
+}
+
+.search-icon:hover {
+    background-color: #ffffff5c;
+}
+
+.sub-nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-image: linear-gradient(45deg, #00d07e, #2196F3);
+    list-style: none;
+    display: none;
+}
+
+.sub-nav__item--link {
+    color: #fff;
+    font-weight: 400;
+    text-decoration: none;
+    display: inline-block;
+    width: 190px;
+    padding: 12px 10px;
+    border-bottom: 1px solid #05050514;
+}
+
+.sub-nav__item--link:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+/*Introduce*/
+.introduce {
+    color: #000000DE;
+    margin: 7.5px 0;
+}
+
+.introduce__main-title {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+
+.introduce__sub-title {
+    line-height: 30px;
+    font-weight: 400;
+}
+
+.introduce__sub-title--highlight {
+    font-weight: 500;
+}
+
+/*post*/
+.posts {
+    display: flex;
+}
+
+.post-tilte {
+    font-size: 16px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.new {
+    width: 100%;
+}
+
+.new__post-list {
+    list-style: none;
+    padding: 30px 0;
+}
+
+.new__post-list--item {
+    border-bottom: 1px solid #e6e6e6;
+    padding: 30px 0;
+}
+
+.new-name {
+    font-size: 26px;
+    font-weight: 500;
+    margin: 10px 0;
+    text-decoration: none;
+    color: #000;
+}
+
+.new-name:hover,
+.new-author__name:hover {
+    color: #00d07e;
+}
+
+.new-content {
+    display: flex;
+    margin-top: 24px;
+}
+
+.new-content__link {
+    width: 88%;
+    height: 155px;
+}
+
+.new-content__link--thumnail {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.new-inf {
+    margin-left: 18px;
+}
+
+.new-inf__author-views {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.new-author {
+    display: flex;
+    align-items: center;
+}
+
+.new-author__avt {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.new-author__name {
+    margin-left: 10px;
+}
+
+.new-inf__author-views--views {}
+
+.new-viewsnumber {
+    font-weight: 500;
+}
+
+.new-inf__about {
+    margin-top: 16px;
+    line-height: 28px;
+    color: #212c37;
+}
+
+.more-btn {
+    background-color: #00d07e;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    width: 80%;
+    height: 57px;
+    border: none;
+    border-radius: 6px;
+    display: block;
+    margin: 0 auto;
+}
+
+.more-btn:hover {
+    background-color: #00aa67;
+}
+
+.views {}
+
+.views__post-list {
+    list-style: none;
+}
+
+.views__post-list--item {
+    padding: 20px 0;
+    border-bottom: 1px solid #cccccc69;
+}
+
+.views-content {
+    display: flex;
+}
+
+.views-content__link {}
+
+.views-content__link--thumnail {
+    width: 150px;
+    height: 95px;
+}
+
+.views-inf {
+    margin-left: 10px;
+}
+
+.views-inf__name {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    margin-bottom: 2px;
+    display: inline-block;
+}
+
+.views-inf__name:hover {
+    color: #00d07e;
+}
+
+.views-inf__date-views {
+    font-size: 12px;
+    color: #9d9c9c;
+}
+
+.views-viewsnumber {
+    font-weight: 700;
+}
+
+.footer {
+    width: 100%;
+    height: 428px;
+    background-color: #1d2b35;
+    margin-top: 40px;
+    position: relative;
+}
+
+.footer__content {
+    margin-top: 40px;
+    display: flex;
+}
+
+.contact {}
+
+.contact__name-brand {
+    font-size: 26px;
+    color: #00d07e;
+}
+
+.contact__about-brand--title {
+    margin: 20px 0;
+}
+
+.footer-list {
+    list-style: none;
+}
+
+.footer-list__tilte {
+    font-size: 20px;
+    color: #94a1af;
+}
+
+.footer-list__tilte::before {
+    content: "";
+}
+
+.footer-list__item {}
+
+.footer-list__item a {
+    text-decoration: none;
+    color: #00d07e;
+    display: inline-block;
+    padding: 14px 0;
+}
+
+.footer-list__item--fix a {
+    color: #94a1af;
+}
+
+.copyright {
+    margin: 0 auto;
+    font-size: 16px;
+    color: #94a1af;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.copyright--highlight {
+    color: #00d07e;
+}
