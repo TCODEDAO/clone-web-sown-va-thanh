@@ -541,6 +541,6 @@ html {
     transform: translateX(-50%);
 }
 
-.copyright--highlight {
+.copyright--highlight a{
     color: #00d07e;
 }
