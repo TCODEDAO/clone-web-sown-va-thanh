@@ -543,4 +543,5 @@ html {
 
 .copyright--highlight a{
     color: #00d07e;
+    text-decoration: none;
 }
