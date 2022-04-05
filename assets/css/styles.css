@@ -1,11 +1,11 @@
 .body {
-    margin: 0 120px;
 }
-
+.container{
+    overflow: hidden;
+}
 /* Gioi thieu sach giao khoa */
 .list-books {
     margin-bottom: 20px;
-
 }
 
 
@@ -13,6 +13,8 @@
     cursor: pointer;
     display: flex;
     justify-content: space-between;
+    margin: 30px 0 40px 0;
+    overflow-y: auto;
 }
 
 .list-books__content--child {
@@ -175,6 +177,10 @@ html {
     flex-wrap: wrap;
     margin: 0 -20px;
 }
+.grid__column-full-width{
+    padding: 0 20px;
+    width: 100%;
+}
 
 .grid__column-8 {
     padding: 0 20px;
@@ -205,7 +211,6 @@ html {
 
 .header__content {
     display: flex;
-    width: 1024px;
     justify-content: space-between;
     align-items: center;
 }
@@ -292,7 +297,7 @@ html {
 /*Introduce*/
 .introduce {
     color: #000000DE;
-    margin: 7.5px 0;
+    margin-top: 90px;
 }
 
 .introduce__main-title {
@@ -472,7 +477,7 @@ html {
 
 .footer {
     width: 100%;
-    height: 428px;
+    /* height: 428px; */
     background-color: #1d2b35;
     margin-top: 40px;
     position: relative;
@@ -535,10 +540,8 @@ html {
     margin: 0 auto;
     font-size: 16px;
     color: #94a1af;
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
+    text-align: center;
+    padding: 20px 0;
 }
 
 .copyright--highlight a{
