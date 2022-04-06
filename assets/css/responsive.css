@@ -1,5 +1,5 @@
 /*mobile*/
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1070px){
     .brand{
         margin: 0 !important;
     }
@@ -111,7 +111,7 @@
     }
 }
 /* tablet */
-@media screen and (min-width: 741px) and (max-width: 1024px) {
+@media screen and (min-width: 741px) and (max-width: 1070px) {
     .list-books__content--child{
         width: 46%;
         margin: 5px 0;
